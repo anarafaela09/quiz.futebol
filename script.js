@@ -1,78 +1,167 @@
 const perguntas = [
     {
-        pergunta: "Quem foi o campeão do Brasileirão de 2023?",
-        alternativas: ["Flamengo", "Palmeiras", "Grêmio", "Botafogo"],
-        correta: "Palmeiras"
-    },
-    {
-        pergunta: "Quem foi o artilheiro do Brasileirão de 2023?",
-        alternativas: ["Hulk", "Gabigol", "Paulinho", "Tiquinho Soares"],
-        correta: "Paulinho"
-    },
-    {
-        pergunta: "Qual time foi campeão do Brasileirão de 2024?",
-        alternativas: ["Botafogo", "Palmeiras", "Flamengo", "Fortaleza"],
-        correta: "Botafogo"
-    },
-    {
-        pergunta: "Qual foi a posição do Flamengo no Brasileirão de 2024?",
-        alternativas: ["1º lugar", "2º lugar", "3º lugar", "4º lugar"],
-        correta: "3º lugar"
-    },
-    {
-        pergunta: "Quem foi o vice-campeão brasileiro de 2023?",
-        alternativas: ["Flamengo", "Grêmio", "Botafogo", "Atlético-MG"],
-        correta: "Grêmio"
-    },
-    {
-        pergunta: "Quantos pontos o Palmeiras fez no Brasileirão de 2023?",
-        alternativas: ["68", "70", "72", "74"],
-        correta: "70"
-    },
-    {
-        pergunta: "Quantos pontos o Botafogo conquistou no Brasileirão de 2024?",
-        alternativas: ["73", "76", "79", "82"],
-        correta: "79"
-    },
-    {
-        pergunta: "Em qual posição o Botafogo terminou o Brasileirão de 2023?",
-        alternativas: ["3º lugar", "4º lugar", "5º lugar", "6º lugar"],
-        correta: "5º lugar"
-    },
-    {
-        pergunta: "Qual clube foi rebaixado no Brasileirão de 2023?",
-        alternativas: ["Santos", "Flamengo", "Palmeiras", "São Paulo"],
+        pergunta: "Qual foi o primeiro clube brasileiro a conquistar a Copa Libertadores?",
+        alternativas: [
+            "Santos",
+            "São Paulo",
+            "Palmeiras",
+            "Flamengo"
+        ],
         correta: "Santos"
     },
+
     {
-        pergunta: "Quem foi o vice-campeão do Brasileirão de 2024?",
-        alternativas: ["Flamengo", "Palmeiras", "Fortaleza", "Internacional"],
-        correta: "Palmeiras"
+        pergunta: "Na final da Libertadores de 2019, quem marcou o gol da virada do Flamengo contra o River Plate?",
+        alternativas: [
+            "Bruno Henrique",
+            "Gabigol",
+            "Arrascaeta",
+            "Éverton Ribeiro"
+        ],
+        correta: "Gabigol"
     },
+
     {
-        pergunta: "Quantos pontos o Grêmio fez no Brasileirão de 2023?",
-        alternativas: ["65", "68", "70", "72"],
-        correta: "68"
+        pergunta: "Qual clube ficou conhecido como 'Rei de Copas' por suas conquistas da Copa do Brasil?",
+        alternativas: [
+            "Grêmio",
+            "Corinthians",
+            "Cruzeiro",
+            "Flamengo"
+        ],
+        correta: "Cruzeiro"
     },
+
     {
-        pergunta: "Qual clube terminou com a mesma pontuação do Botafogo em 2024?",
-        alternativas: ["Palmeiras", "Flamengo", "Nenhum", "Fortaleza"],
-        correta: "Nenhum"
+        pergunta: "Quem marcou o gol do título do Palmeiras na final da Libertadores de 2020?",
+        alternativas: [
+            "Rony",
+            "Raphael Veiga",
+            "Luiz Adriano",
+            "Breno Lopes"
+        ],
+        correta: "Breno Lopes"
     },
+
     {
-        pergunta: "Quantos pontos o Bragantino conquistou em 2023?",
-        alternativas: ["59", "62", "65", "68"],
-        correta: "62"
+        pergunta: "Qual foi o adversário do Fluminense na final da Libertadores de 2023?",
+        alternativas: [
+            "Boca Juniors",
+            "River Plate",
+            "Flamengo",
+            "Atlético-MG"
+        ],
+        correta: "Boca Juniors"
     },
+
     {
-        pergunta: "Em qual posição o Fortaleza terminou o Brasileirão de 2024?",
-        alternativas: ["3º lugar", "4º lugar", "5º lugar", "6º lugar"],
-        correta: "4º lugar"
+        pergunta: "Qual jogador brasileiro ficou conhecido pelo apelido de 'Fenômeno'?",
+        alternativas: [
+            "Ronaldinho Gaúcho",
+            "Romário",
+            "Ronaldo Nazário",
+            "Kaká"
+        ],
+        correta: "Ronaldo Nazário"
     },
+
     {
-        pergunta: "Quem foi o campeão brasileiro de 2025?",
-        alternativas: ["Palmeiras", "Flamengo", "Botafogo", "Cruzeiro"],
+        pergunta: "Qual clube revelou Neymar para o futebol profissional?",
+        alternativas: [
+            "Barcelona",
+            "Santos",
+            "Palmeiras",
+            "São Paulo"
+        ],
+        correta: "Santos"
+    },
+
+    {
+        pergunta: "Em qual estádio aconteceu a final da Copa do Mundo de 2014?",
+        alternativas: [
+            "Maracanã",
+            "Mineirão",
+            "Arena Corinthians",
+            "Mané Garrincha"
+        ],
+        correta: "Maracanã"
+    },
+
+    {
+        pergunta: "Qual clube venceu o Campeonato Brasileiro de 2024?",
+        alternativas: [
+            "Palmeiras",
+            "Flamengo",
+            "Botafogo",
+            "Fortaleza"
+        ],
+        correta: "Botafogo"
+    },
+
+    {
+        pergunta: "Qual jogador ficou conhecido como 'Maestro' e foi ídolo do São Paulo e da Seleção Brasileira?",
+        alternativas: [
+            "Rivaldo",
+            "Kaká",
+            "Zico",
+            "Raí"
+        ],
+        correta: "Raí"
+    },
+
+    {
+        pergunta: "Na Copa do Brasil de 2023, qual clube conquistou seu primeiro título da competição?",
+        alternativas: [
+            "Flamengo",
+            "São Paulo",
+            "Grêmio",
+            "Corinthians"
+        ],
+        correta: "São Paulo"
+    },
+
+    {
+        pergunta: "Qual clube brasileiro venceu o Liverpool na final do Mundial de Clubes de 1981?",
+        alternativas: [
+            "Flamengo",
+            "Santos",
+            "Internacional",
+            "São Paulo"
+        ],
         correta: "Flamengo"
+    },
+
+    {
+        pergunta: "Qual foi o placar da final da Copa América de 2019 entre Brasil e Peru?",
+        alternativas: [
+            "2 a 0",
+            "3 a 1",
+            "1 a 0",
+            "4 a 2"
+        ],
+        correta: "3 a 1"
+    },
+
+    {
+        pergunta: "Qual jogador é conhecido como o maior artilheiro da história do Campeonato Brasileiro?",
+        alternativas: [
+            "Romário",
+            "Fred",
+            "Roberto Dinamite",
+            "Zico"
+        ],
+        correta: "Roberto Dinamite"
+    },
+
+    {
+        pergunta: "Qual clube conquistou a Libertadores de 2024, vencendo o Atlético-MG na final?",
+        alternativas: [
+            "Palmeiras",
+            "Botafogo",
+            "Flamengo",
+            "Fluminense"
+        ],
+        correta: "Botafogo"
     }
 ];
 
