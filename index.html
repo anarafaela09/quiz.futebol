@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasileirão | Quiz dos Craques</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="stadium-light light-left"></div>
+    <div class="stadium-light light-right"></div>
+
+    <div class="particles"></div>
+
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon">⚽</div>
+
+            <div>
+                <h2>BRASILEIRÃO</h2>
+                <span>QUIZ DOS CRAQUES</span>
+            </div>
+        </div>
+
+        <div class="header-tag">
+            <span class="live-dot"></span>
+            DESAFIO DE FUTEBOL
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <!-- TELA INICIAL -->
+
+        <section id="inicio" class="tela ativa">
+
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <span class="edition">EDIÇÃO ESPECIAL • 2023 — 2025</span>
+
+                    <h1>
+                        QUIZ DO
+                        <span>BRASILEIRÃO</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Conhecimento, paixão e futebol.
+                        Mostre que você entende tudo sobre o campeonato
+                        mais disputado do Brasil.
+                    </p>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>15</strong>
+                            <span>PERGUNTAS</span>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <strong>⚽</strong>
+                            <span>FUTEBOL</span>
+                        </div>
+
+                        <div class="stat-divider"></div>
+
+                        <div class="stat">
+                            <strong>🏆</strong>
+                            <span>DESAFIO</span>
+                        </div>
+
+                    </div>
+
+                    <button class="btn-primary" onclick="iniciarQuiz()">
+                        <span>⚽</span>
+                        COMEÇAR DESAFIO
+                        <span class="arrow">➜</span>
+                    </button>
+
+                    <p class="hero-footer">
+                        PREPARE-SE PARA ENTRAR EM CAMPO
+                    </p>
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="circle-glow"></div>
+
+                    <div class="trophy">
+                        🏆
+                    </div>
+
+                    <div class="trophy-label">
+                        <span>CAMPEONATO</span>
+                        <strong>BRASILEIRÃO</strong>
+                    </div>
+
+                    <div class="floating-ball">⚽</div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom-banner">
+                <span>⚡</span>
+                SUA HISTÓRIA COMEÇA AQUI
+                <span>⚡</span>
+            </div>
+
+        </section>
+
+
+        <!-- TELA DO QUIZ -->
+
+        <section id="quiz" class="tela">
+
+            <div class="quiz-heading">
+
+                <div class="mini-brand">
+                    <span>⚽</span>
+                    <div>
+                        <strong>DESAFIO BRASILEIRÃO</strong>
+                        <small>CONHECIMENTO DE CAMPEÃO</small>
+                    </div>
+                </div>
+
+                <div class="match-badge">
+                    <span class="live-dot"></span>
+                    EM JOGO
+                </div>
+
+            </div>
+
+            <div class="quiz-card">
+
+                <div class="question-label">
+                    <span class="question-icon">⚽</span>
+                    <span>PERGUNTA DO DESAFIO</span>
+                </div>
+
+                <h2 id="pergunta"></h2>
+
+                <div id="alternativas" class="alternativas"></div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <button id="proxima" class="btn-primary next-button"
+                    onclick="proximaPergunta()" style="display: none;">
+                    PRÓXIMA PERGUNTA
+                    <span class="arrow">➜</span>
+                </button>
+
+            </div>
+
+            <div class="quiz-footer">
+                <span>🏟️</span>
+                <p>GRANDES CLUBES. GRANDES HISTÓRIAS.</p>
+                <span>🏆</span>
+            </div>
+
+        </section>
+
+
+        <!-- TELA DE RESULTADO -->
+
+        <section id="resultado" class="tela">
+
+            <div class="result-card">
+
+                <div class="result-trophy">🏆</div>
+
+                <span class="result-tag">FIM DE JOGO</span>
+
+                <h1>QUIZ FINALIZADO!</h1>
+
+                <p class="result-subtitle">
+                    O apito final chegou. Veja como foi seu desempenho!
+                </p>
+
+                <div class="score-box">
+
+                    <span>SUA PONTUAÇÃO</span>
+
+                    <h2 id="pontuacao"></h2>
+
+                    <div class="score-decoration"></div>
+
+                </div>
+
+                <h3 id="mensagem"></h3>
+
+                <p class="result-description">
+                    O futebol é feito de paixão, história e conhecimento.
+                    Continue mostrando seu talento!
+                </p>
+
+                <button class="btn-primary" onclick="reiniciarQuiz()">
+                    ↻ JOGAR NOVAMENTE
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span>BRASILEIRÃO QUIZ</span>
+        <span>FEITO PARA QUEM VIVE FUTEBOL ⚽</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
